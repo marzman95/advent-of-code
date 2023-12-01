@@ -369,3 +369,8 @@ MigrationBackup/
 FodyWeavers.xsd
 /2023/Day1/obj
 /2023/Day1/bin
+/2023/*/bin/
+/2023/*/obj/
+/2023/*/.vs/*
+/2023/*/files/personalInput.txt
+*.sln
