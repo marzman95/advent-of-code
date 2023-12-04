@@ -6,7 +6,7 @@ Console.WriteLine("Marcin van de Ven (@marzman95)");
 Console.ForegroundColor = startColor;
 Console.WriteLine("----------------------------------------------");
 
-string inputFile = $"C:\\Users\\MarcinvandeVen\\Source\\Repos\\marzman95\\advent-of-code\\2023\\Day2\\files\\personalInput.txt";
+string inputFile = $"{{INPUTFILE}}";
 List<string> lines = new List<string>();
 List<int> sums = new List<int>();
 FileStream _stream = new FileStream(inputFile, FileMode.Open, FileAccess.Read);
