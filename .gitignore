@@ -373,6 +373,7 @@ FodyWeavers.xsd
 /2023/*/obj/
 /2023/*/.vs/*
 /2023/*/files/personalInput.txt
+/2023/*/files/testInput.txt
 *.sln
 /2023/*/*/bin/
 /2023/*/*/obj/
