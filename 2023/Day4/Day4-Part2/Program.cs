@@ -21,7 +21,7 @@ Console.WriteLine($"Reading input from {_stream.Name}");
 for (int i = 0; !_reader.EndOfStream; i++)
 {
     lines.Add(_reader.ReadLine());
-    copiesTempList[i] = 1;
+    copiesTempList.Add(1);
 }
 lineCount = lines.Count;
 int[] cardCopies = copiesTempList.ToArray();
@@ -31,11 +31,11 @@ Console.WriteLine($"Read {lineCount} lines of input from {_stream.Name}");
 // add lines to list, count lines, initialize array of copies
 
 // for each line
-foreach (string line in lines)
+for (int l = 0; l < lineCount; l++)
 {
     // clean line of single digit numbers
-    string cleanedLine = CleanLine(line);
-    Console.Write($"Processing {line.Substring(0, 7)}");
+    string cleanedLine = CleanLine(lines[l]);
+    Console.Write($"Processing {lines[l].Substring(0, 7)}");
     // get list of winning numbers
     int[] winningNumbers = GetListWinningNumbers(cleanedLine);
     // get list of having numbers
@@ -45,7 +45,6 @@ foreach (string line in lines)
     int matching = 0;
     foreach (var number in havingNumbers)
     {
-        
         if (winningNumbers.Contains(number))
         {
             // contains = true:
@@ -60,14 +59,23 @@ foreach (string line in lines)
                 matching++;
             }
         }
+    }
+    for (int m = 1; m <= matching; m++)
+    {
         // add +1 to copies for the next matching amount
         // IMPLEMENT
+        int addValue = cardCopies[l];
+        cardCopies[l+m] += addValue;
     }
-    Console.WriteLine($"{line.Substring(0, 7)} has {matching} matches");
+    Console.WriteLine($"{lines[l].Substring(0, 7)} has {matching} matches");
 }
 // sum all numbers in copies array
 // IMPLEMENT
-Console.WriteLine($"Processed {lineCount} input cards, making a total of {cards}");
+foreach (var copy in cardCopies)
+{
+    totalScore += copy;
+}
+Console.WriteLine($"Processed {lineCount} input cards, making a total of {totalScore}");
 
 string CleanLine(string line)
 {
