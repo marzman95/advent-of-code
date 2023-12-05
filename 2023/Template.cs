@@ -20,7 +20,8 @@ for (int i = 0; !_reader.EndOfStream; i++)
 {
     lines.Add(_reader.ReadLine());
 }
-Console.WriteLine($"Read {lines.Count} lines of input from {_stream.Name}");
+lineCount = lines.Count;
+Console.WriteLine($"Read {lineCount} lines of input from {_stream.Name}");
 
 foreach (string line in lines)
 {
