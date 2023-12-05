@@ -24,5 +24,5 @@ Console.WriteLine($"Read {lines.Count} lines of input from {_stream.Name}");
 
 foreach (string line in lines)
 {
-    totalScore += totalScore + 1;
+    totalScore += 1;
 }
