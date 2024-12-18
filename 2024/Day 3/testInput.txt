@@ -1,2 +1,0 @@
-do()mul(2,3)don't()mul(1,2)
-mul(1,2)do()mul(1,2)don't()
