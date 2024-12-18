@@ -360,3 +360,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# AoC inputs files and examples
+*input.txt
+*exampleInput.txt
+*smallExample.txt
+
+# Generated/output files used when processing input of AoC
+/2024/Day 2/inputEdges.txt
+/2024/Day 5/invalidRuleSet.txt
