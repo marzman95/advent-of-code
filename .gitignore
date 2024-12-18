@@ -377,3 +377,9 @@ FodyWeavers.xsd
 *.sln
 /2023/*/*/bin/
 /2023/*/*/obj/
+### 2024
+/AoC2024/*/bin/
+/AoC2024/*/obj/
+/AoC2024/*/input.txt
+/AoC2024/*/exampleInput.txt
+/AoC2024/.vs
