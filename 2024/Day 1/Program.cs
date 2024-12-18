@@ -6,7 +6,7 @@ List<int> rightList = new List<int>();
 int totalDifferenceSum = 0;
 
 // Open file
-string[] inputIds = File.ReadAllLines("LocationIDList.txt");
+string[] inputIds = File.ReadAllLines("input.txt");
 Console.Write("Opened files, initialized lists. Processing file..");
 
 // For each line
