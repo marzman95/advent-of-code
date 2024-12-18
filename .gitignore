@@ -363,32 +363,15 @@ MigrationBackup/
 .ionide/
 
 /.vs
-/2023/AoC_01122023/obj/Release/net8.0
-/2023/AoC_01122023/obj
 # Fody - auto-generated XML schema
-FodyWeavers.xsd
-/2023/Day1/obj
-/2023/Day1/bin
-/2023/*/bin/
-/2023/*/obj/
-/2023/*/.vs/*
-/2023/*/files/personalInput.txt
-/2023/*/files/testInput.txt
-*.sln
-/2023/*/*/bin/
-/2023/*/*/obj/
-### 2024
-/AoC2024/*/bin/
-/AoC2024/*/obj/
-/AoC2024/*/input.txt
-/AoC2024/*/exampleInput.txt
-/AoC2024/.vs
 FodyWeavers.xsd
 
 # AoC inputs files and examples
 *input.txt
 *exampleInput.txt
+*personalInput.txt
 *smallExample.txt
+*testInput.txt
 
 # Generated/output files used when processing input of AoC
 /2024/Day 2/inputEdges.txt
