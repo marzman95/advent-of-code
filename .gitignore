@@ -383,3 +383,13 @@ FodyWeavers.xsd
 /AoC2024/*/input.txt
 /AoC2024/*/exampleInput.txt
 /AoC2024/.vs
+FodyWeavers.xsd
+
+# AoC inputs files and examples
+*input.txt
+*exampleInput.txt
+*smallExample.txt
+
+# Generated/output files used when processing input of AoC
+/2024/Day 2/inputEdges.txt
+/2024/Day 5/invalidRuleSet.txt
